@@ -1,3 +1,5 @@
-#welcome {
-    color : green;
+#intro {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
 }
