@@ -2,13 +2,16 @@ body {
     font-family: 'Raleway', Helvetica, sans-serif;
     text-align: center;
     font-size: 120%;
+    background-color:#ffffff
 }
 
+
 #intro {
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 2px;
 }
+
 
 #subheading { 
     font-weight: 400;
@@ -26,9 +29,40 @@ body {
     margin: auto;
     font-size: 19px;
     font-weight: 300;
-    color: #666666;
+    color: #555555;
     line-height: 130%;
 }
 
+#projects {
+    font-weight: 800;
+    margin-top:30px;
+    margin-bottom:0px;
+}
 
+#project-links p {
+    margin-top:10px;
+}
 
+#tbc {
+    color: #555555;
+}
+
+.social {
+    width:40px;
+    height:40px;
+    margin-left:5px;
+    margin-right:5px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666666;
+}
