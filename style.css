@@ -83,6 +83,7 @@
     a {
         color: rgb(255, 255, 255);
         text-decoration: none;
+        
     }
     
     a:visited {
@@ -94,7 +95,7 @@
         color: #d0d0d0;
     }
     .heading {
-        color: #d1d1d1;
+        color: #e5e5e5;
     }
     
 }
@@ -120,17 +121,26 @@
 
 #projects {
     font-weight: 800;
-    margin-top:30px;
+    margin-top:25px;
     margin-bottom:0px;
 }
 
 #project-links p {
     margin-top:10px;
+    transition: all 0.3s;
+
 }
+
 
 .social {
     width:40px;
     height:40px;
     margin-left:5px;
     margin-right:5px;
+    margin-top: 5px;
+}
+
+
+a:hover {
+    font-size: 105%;
 }
