@@ -1,8 +1,102 @@
-body {
-    font-family: 'Raleway', Helvetica, sans-serif;
-    text-align: center;
-    font-size: 120%;
-    background-color:#ffffff
+@media (prefers-color-scheme: light) {
+    body {
+        font-family: 'Raleway', Helvetica, sans-serif;
+        text-align: center;
+        font-size: 120%;
+        background-color:#ffffff
+    }
+    
+    #description {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 19px;
+        font-weight: 300;
+        color: #555555;
+        line-height: 130%;
+    }
+    
+    #linkedin {
+        content:url("./linkedin_light.png");
+    }
+    #github {
+        content:url("./github_light.png");
+    }
+    #instagram {
+        content:url("./instagram_light.png");
+    }
+    #tbc {
+        color: #555555;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #666666;
+    }
+    
+    .heading {
+        color: black;
+    }
+
+    
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        font-family: 'Raleway', Helvetica, sans-serif;
+        text-align: center;
+        font-size: 120%;
+        background-color:#1c1b1b
+    }
+    
+    #description {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 19px;
+        font-weight: 300;
+        color: #e9e9e9;
+        line-height: 130%;
+    }
+    
+    #linkedin {
+        content:url("./linkedin_dark.png");
+    }
+    #github {
+        content:url("./github_dark.png");
+    }
+    #instagram {
+        content:url("./instagram_dark.png");
+    }
+
+    #tbc {
+        color: #e9e9e9;
+    }
+    
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #d0d0d0;
+    }
+    .heading {
+        color: #d1d1d1;
+    }
+    
 }
 
 
@@ -24,15 +118,6 @@ body {
     padding-top: 150px;
 }
 
-#description {
-    max-width: 1000px;
-    margin: auto;
-    font-size: 19px;
-    font-weight: 300;
-    color: #555555;
-    line-height: 130%;
-}
-
 #projects {
     font-weight: 800;
     margin-top:30px;
@@ -43,26 +128,9 @@ body {
     margin-top:10px;
 }
 
-#tbc {
-    color: #555555;
-}
-
 .social {
     width:40px;
     height:40px;
     margin-left:5px;
     margin-right:5px;
-}
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #666666;
 }
