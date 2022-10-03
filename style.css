@@ -54,7 +54,7 @@
         font-family: 'Raleway', Helvetica, sans-serif;
         text-align: center;
         font-size: 120%;
-        background-color:#1c1b1b
+        background-color:#191919
     }
     
     #description {
@@ -141,6 +141,6 @@
 }
 
 
-a:hover {
+#project-links a:hover {
     font-size: 105%;
 }
