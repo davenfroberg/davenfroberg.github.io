@@ -124,6 +124,9 @@
     margin-top:25px;
     margin-bottom:0px;
 }
+#project-links {
+    display: inline-block;
+}
 
 #project-links p {
     margin-top:10px;
