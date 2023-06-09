@@ -16,13 +16,13 @@
     }
     
     #linkedin {
-        content:url("./linkedin_light.png");
+        content:url("./images/linkedin_light.png");
     }
     #github {
-        content:url("./github_light.png");
+        content:url("./images/github_light.png");
     }
     #instagram {
-        content:url("./instagram_light.png");
+        content:url("./images/instagram_light.png");
     }
     
     #tbc {
@@ -46,6 +46,18 @@
     .heading {
         color: black;
     }
+
+    .nav {
+        background-color:#f5f5f5
+    }
+
+    .nav a {
+        background-color:#ececec
+    }
+
+    .hamburger .bar, .hamburger:after, .hamburger:before {
+        background-color: #191919;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,19 +78,20 @@
     }
     
     #linkedin {
-        content:url("./linkedin_dark.png");
+        content:url("./images/linkedin_dark.png");
     }
     #github {
-        content:url("./github_dark.png");
+        content:url("./images/github_dark.png");
     }
     #instagram {
-        content:url("./instagram_dark.png");
+        content:url("./images/instagram_dark.png");
     }
 
     #tbc {
         color: #9d9d9d;
         font-weight:200
     }
+    
     
     a {
         color: rgb(255, 255, 255);
@@ -97,7 +110,79 @@
     .heading {
         color: #e5e5e5;
     }
+    .nav {
+        background-color:#202020
+    }
+    .nav a {
+        background-color: rgb(56, 56, 56);
+    }
+
+    .hamburger .bar, .hamburger:after, .hamburger:before {
+        background-color: #ffffff;
+    }
     
+}
+
+.nav a {
+    display: block;
+    margin: 0 auto 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 80%
+    
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 25%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    padding-top: 120px;
+    right: 100%;
+    transition: 0.4s;
+}
+
+.nav.is-active {
+    right: 75%;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 99;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content:'';
+    display: block;
+    width:100%;
+    height:5px;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-8px, -9px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
 }
 
 
