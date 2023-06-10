@@ -135,3 +135,8 @@
 #soon {
     padding-top:150px;
 }
+
+.project {
+    text-decoration: none;
+    list-style-type: none;
+}
