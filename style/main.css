@@ -16,13 +16,13 @@
     }
     
     #linkedin {
-        content:url("./images/linkedin_light.png");
+        content:url("../images/linkedin_light.png");
     }
     #github {
-        content:url("./images/github_light.png");
+        content:url("../images/github_light.png");
     }
     #instagram {
-        content:url("./images/instagram_light.png");
+        content:url("../images/instagram_light.png");
     }
     
     #tbc {
@@ -78,13 +78,13 @@
     }
     
     #linkedin {
-        content:url("./images/linkedin_dark.png");
+        content:url("../images/linkedin_dark.png");
     }
     #github {
-        content:url("./images/github_dark.png");
+        content:url("../images/github_dark.png");
     }
     #instagram {
-        content:url("./images/instagram_dark.png");
+        content:url("../images/instagram_dark.png");
     }
 
     #tbc {
