@@ -136,7 +136,10 @@
     padding-top:150px;
 }
 
-.project {
-    text-decoration: none;
+li {
     list-style-type: none;
+}
+
+.project {
+    font-weight: bold;
 }
