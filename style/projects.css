@@ -132,14 +132,18 @@
     opacity: 0;
 }
 
-#soon {
-    padding-top:150px;
-}
-
 li {
     list-style-type: none;
 }
 
 .project {
     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.language {
+    font-style: italic;
 }

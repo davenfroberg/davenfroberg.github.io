@@ -1,3 +1,5 @@
+var username = 'davenfroberg';
+
 window.onload = function () {
     const menu_button = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav');
@@ -9,12 +11,17 @@ window.onload = function () {
 
 var reposRequest = new XMLHttpRequest();
 
-reposRequest.open('GET', 'https://api.github.com/users/davenfroberg/repos', true);
+reposRequest.open('GET', `https://api.github.com/users/${username}/repos`, true);
 
 reposRequest.onload = function() {
     var datas = JSON.parse(this.response);
 
     datas.forEach(function(data) {
+
+        //skips profile readme repository
+        if (data.name == username)
+            return;
+
         description = data.description;
         var ul = document.getElementById("projectList");
         var li = document.createElement("li");
@@ -27,12 +34,20 @@ reposRequest.onload = function() {
 
         var full_name = data.full_name;
         var branch = data.default_branch;
+        if (data.language != null) {
+            var language = document.createElement('div');
+            language.appendChild(document.createTextNode(data.language));
+            li.appendChild(language);
+            language.classList.add('language');
+        }
+        
 
         var readMeRequest = new XMLHttpRequest();
         readMeRequest.open('GET', `https://raw.githubusercontent.com/${full_name}/${branch}/README.md`, true);
 
         readMeRequest.onload = function() {
             var readme = this.response;
+            
             var readmeDiv = document.createElement("div");
             readmeDiv.classList.add('readme')
             readmeDiv.appendChild(document.createTextNode(readme));
