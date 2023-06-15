@@ -29,7 +29,8 @@ reposRequest.onload = function() {
         li.appendChild(div);
         div.appendChild(document.createTextNode(description));
         div.classList.add('project');
-        div.setAttribute('id', data.name)
+        div.setAttribute('id', data.name);
+       
         ul.appendChild(li);
 
         var full_name = data.full_name;
@@ -47,7 +48,6 @@ reposRequest.onload = function() {
 
         readMeRequest.onload = function() {
             var readme = this.response;
-            
             var readmeDiv = document.createElement("div");
             readmeDiv.classList.add('readme')
             readmeDiv.appendChild(document.createTextNode(readme));
@@ -55,6 +55,10 @@ reposRequest.onload = function() {
             console.log(readme);
         }
         readMeRequest.send();
+
+        document.getElementById(data.name).addEventListener('click', function() {
+            location.href = data.html_url;
+        }, false);
     });
 }
 
