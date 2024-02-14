@@ -25,9 +25,7 @@ fetch(`https://api.github.com/users/${username}/repos`).then((response) => respo
         div.setAttribute('id', data.name);
         
         ul.appendChild(li);
-
-        var full_name = data.full_name;
-        var branch = data.default_branch;
+        
         if (data.language != null) {
             var language = document.createElement('div');
             language.appendChild(document.createTextNode(data.language));

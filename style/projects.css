@@ -13,16 +13,14 @@ a {
 }
 
 #project-list {
-    padding-top: 125px;
-    width: fit-content;
-    padding-left: 0;
-    margin: auto;
+    padding: 0;
 }
 
 .project {
     font-weight: bold;
     cursor: pointer;
     padding-top: 10px;
+    text-align: center;
 }
 
 .language {
