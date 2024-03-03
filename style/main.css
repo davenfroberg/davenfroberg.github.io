@@ -8,18 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
 }
 
-#project-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#project-links a:hover {
-    color: #007bff;
+.project-link p {
+    margin-top:4px
 }
 
 #tbc {
