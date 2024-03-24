@@ -14,11 +14,6 @@ body {
     margin-top:4px
 }
 
-#tbc {
-    font-style: italic;
-    color: #777;
-}
-
 a:visited {
     text-decoration: none;
 }
@@ -159,10 +154,6 @@ a {
         content: url("../images/instagram_light.png");
     }
 
-    #tbc {
-        color: #757575;
-    }
-
     a {
         color: black;
     }
@@ -217,10 +208,6 @@ a {
 
     #instagram {
         content: url("../images/instagram_dark.png");
-    }
-
-    #tbc {
-        color: #9d9d9d;
     }
 
     a {
