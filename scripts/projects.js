@@ -22,8 +22,13 @@ fetch(`https://api.github.com/users/${username}/repos`).then((response) => respo
         li.appendChild(div);
         div.appendChild(document.createTextNode(description));
         div.classList.add('project');
-        div.setAttribute('id', data.name);
+        li.setAttribute('id', data.name);
         
+        // Add class "lastProject" to the last project added
+        if (datas.indexOf(data) === datas.length - 1) {
+            li.classList.add('lastProject');
+        }
+
         ul.appendChild(li);
         
         if (data.language != null) {
@@ -36,6 +41,9 @@ fetch(`https://api.github.com/users/${username}/repos`).then((response) => respo
         document.getElementById(data.name).addEventListener('click', function() {
             window.open(data.html_url, '_blank');
         }, false);
-    });
+    })
+    
+    var title = document.getElementById('title');
+    title.style.display = 'block';
 });
 
