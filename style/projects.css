@@ -31,10 +31,6 @@ a {
     color: #555555;
     padding-bottom:10px;
 }
-li:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
-}
 
 .lastProject {
     border-bottom: 1px solid #ccc;
@@ -76,7 +72,7 @@ li:hover {
 }
 
 .hamburger {
-    position: relative;
+    position: fixed;
     display: block;
     width: 45px;
     height: 45px;
@@ -161,6 +157,11 @@ li {
     #projects_image {
         content: url("/images/github_light.png");
     }
+
+    li:hover {
+        background-color: #f2f2f2;
+        cursor: pointer;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -202,6 +203,11 @@ li {
     #projects_image {
         content: url("/images/github_dark.png");
 
+    }
+
+    li:hover {
+        background-color: #444444;
+        cursor: pointer;
     }
 
 }
