@@ -185,6 +185,16 @@ h2 {
         cursor:default;
     }
 
+    .todo {
+        background-color: #f2f2f2;
+        color: #7f7f7f;
+    }
+    
+    .todo:hover {
+        background-color: #f2f2f2;
+        color: black;
+    }
+
     .course {
         border-top: 1px solid #ccc;
     }
