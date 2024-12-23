@@ -27,6 +27,41 @@ ul {
     text-align: center;
 }
 
+#workExperience {
+    margin: 0px 0px 25px 0px
+}
+
+.job {
+    display: flex;
+    margin: 0px 100px;
+    border-radius: 10px;
+    transform: scale(0.9);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .job {
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    .jobDetails {
+        border-right: none;
+    }   
+}
+
+.jobDetails {
+    padding:20px;
+}
+
+.jobBox {
+    flex: 1;
+}
+
+.companyLogo {
+    border-radius: 10px;
+    width: 23%;
+}
+
 section {
     margin-bottom: 0px;
 }
@@ -105,6 +140,15 @@ h2 {
 
 .nav.is-active {
     right: 75%;
+}
+
+@media (max-width: 700px) {
+    .nav {
+        width: 50%;
+    }
+    .nav.is-active {
+        right: 50%;
+    }
 }
 
 .hamburger {
@@ -228,6 +272,10 @@ h2 {
         margin: 5px 0;
         padding: 10px;
     }
+
+    .jobBox {
+        background-color: grey;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -300,6 +348,20 @@ h2 {
     li {
         margin: 5px 0;
         padding: 10px;
+    }
+
+    .job {
+        background-color: #222222;
+    }
+    .jobDetails {
+        border-right: 2px solid #333333;
+    }
+
+    @media (max-width: 768px) {
+       
+        .jobDetails {
+            border-right: none;
+        }   
     }
 
 }

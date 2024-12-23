@@ -107,6 +107,15 @@ h2 {
     right: 75%;
 }
 
+@media (max-width: 700px) {
+    .nav {
+        width: 50%;
+    }
+    .nav.is-active {
+        right: 50%;
+    }
+}
+
 .hamburger {
     position: relative;
     display: block;
