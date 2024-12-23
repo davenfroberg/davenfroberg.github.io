@@ -53,60 +53,23 @@ ul {
     padding:20px;
 }
 
+.eduBox{
+    padding:20px;
+}
+
 .jobBox {
     flex: 1;
+}
+
+.education {
+    margin: 0px 100px;
+    border-radius: 10px;
+    transform: scale(0.9);
 }
 
 .companyLogo {
     border-radius: 10px;
     width: 23%;
-}
-
-section {
-    margin-bottom: 0px;
-}
-
-.skills-list li {
-    font-weight:200;
-    display: inline-block;
-    padding-bottom:0
-}
-
-.star {
-    display:inline-block;
-    width:30px;
-    padding: 0;
-    padding-left:10px;
-    position: relative;
-    top: 5px;
-}
-
-.bottom {
-    padding-top: 35px;
-}
-
-#title {
-    padding:0px;
-    padding-bottom:20px;
-    margin:0px;
-    display:block;
-}
-
-.grade {
-    display:inline;
-    font-weight: 300;
-    font-style:italic;
-}
-
-.course {
-    padding:20px;
-    margin: 0;
-}
-
-.course-level {
-    display: inline;
-    font-weight: 200;
-    font-style: italic;
 }
 
 h2 {
@@ -353,12 +316,14 @@ h2 {
     .job {
         background-color: #222222;
     }
+    .education {
+        background-color: #222222;
+    }
     .jobDetails {
         border-right: 2px solid #333333;
     }
 
     @media (max-width: 768px) {
-       
         .jobDetails {
             border-right: none;
         }   
