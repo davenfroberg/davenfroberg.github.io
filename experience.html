@@ -32,51 +32,62 @@
     </nav>
 
     <main>
+      <h1 id="education">Education</h1>
+        <div id="educationList">
+          <div class="job">
+            <div class="jobDetails jobBox">
+                <img src="/images/ubc.png" alt="UBC Logo" class="companyLogo">
+                <h1 class="companyName">University of British Columbia</h1>
+                <h2 class="jobTitle">Bachelor of Science in Computer Science</h2>
+                <h3 class="jobLocation">Vancouver, BC</h3>
+                <h3 class="jobDate">September 2021 - May 2026</h3>
+            </div>
+            <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(0)">
+                <div class="quote" style="text-align: left;">
+                  “The brick walls are there to stop the people who don’t want it badly enough. They’re there to stop the other people.”
+                  <div class="author" style="text-align: left; padding-top:20px; font-weight:100; font-size:smaller;"> - Randy Pausch; The Last Lecture</div>
+                  <div class="clickMe" style="text-align: center;">Click to learn more...</div>
+                </div>
+                <div class="skills-grid hidden skillsContent">
+                  <div class="skills-container">
+                    <div class="skills-group">
+                      <h2>How's my degree going?</h2>
+                      <ul style="list-style: inside square;">
+                        <li style="font-weight:bold;">90.1% cumulative GPA <span style="font-weight:100;">|</span> 92.9% computer science GPA</li>
+                        <li>A part of the UBC Science Co-op program.</li>
+                        <li>Play on multiple intramural teams, such as hockey, volleyball, and dodgeball.</li>
+                        <li>Successfully (well, debatably) finished the 2023 Great Trek half marathon!</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
         <h1 id="workExperience">Work Experience</h1>
         <div id="jobList">
             <div class="job">
                 <div class="jobDetails jobBox">
                     <img src="/images/ubc.png" alt="UBC Logo" class="companyLogo">
                     <h1 class="companyName">University of British Columbia</h1>
-                    <h2 class="jobTitle">Undergraduate Teaching Assistant</h2>
+                    <h2 class="jobTitle">Undergraduate Teaching Assistant -  CPSC 110</h2>
                     <h3 class="jobLocation">Vancouver, BC</h3>
                     <h3 class="jobDate">September 2024 - Present</h3>
                 </div>
-                <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(0)">
+                <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(1)">
                     <div class="quote">
                         I transform the complex into the simple.
                         <div class="clickMe">Click to learn more...</div>
                       </div>
                     <div class="skills-grid hidden skillsContent">
-                      <h2>Skills</h2>
                       <div class="skills-container">
                         <div class="skills-group">
-                          <h3>Languages</h3>
-                          <ul>
+                          <h2>What do I do?</h2>
+                          <ul style="list-style: inside square;">
                             <li>
-                              <strong>Java</strong>
-                              <span>- <em>for API testing and auditing</em></span>
+                              Lead twice-weekly labs of <strong>30 students each</strong>, teaching core programming concepts such as recursion, graph and tree traversal, testing principles, and problem-solving skills.
                             </li>
                             <li>
-                              <strong>TypeScript</strong>
-                              <span>- <em>for UI testing</em></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="skills-group">
-                          <h3>Technologies</h3>
-                          <ul>
-                            <li>
-                              <strong>Linux</strong>
-                              <span>- <em>for interacting with CLI tools and products</em></span>
-                            </li>
-                            <li>
-                              <strong>JUnit, Selenium, Playwright</strong>
-                              <span>- <em>for automated testing</em></span>
-                            </li>
-                            <li>
-                              <strong>Jenkins, Docker, Ansible</strong>
-                              <span>- <em>for pipelining and automation of dev processes</em></span>
+                              Host weekly office hours, providing one-on-one support to help students deepen understanding of course material.
                             </li>
                           </ul>
                         </div>
@@ -94,42 +105,19 @@
                   <h3 class="jobDate">January 2024 - August 2024</h3>
                 </div>
               
-                <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(1)">
+                <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(2)">
                   <div class="quote">
                     I broke things so the important people wouldn't.
                     <div class="clickMe">Click to learn more...</div>
                   </div>
                   <div class="skills-grid hidden skillsContent">
-                    <h2>Skills</h2>
                     <div class="skills-container">
                       <div class="skills-group">
-                        <h3>Languages</h3>
-                        <ul>
-                          <li>
-                            <strong>Java</strong>
-                            <span>- <em>for API testing and auditing</em></span>
-                          </li>
-                          <li>
-                            <strong>TypeScript</strong>
-                            <span>- <em>for UI testing</em></span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="skills-group">
-                        <h3>Technologies</h3>
-                        <ul>
-                          <li>
-                            <strong>Linux</strong>
-                            <span>- <em>for interacting with CLI tools and products</em></span>
-                          </li>
-                          <li>
-                            <strong>JUnit, Selenium, Playwright</strong>
-                            <span>- <em>for automated testing</em></span>
-                          </li>
-                          <li>
-                            <strong>Jenkins, Docker, Ansible</strong>
-                            <span>- <em>for pipelining and automation of dev processes</em></span>
-                          </li>
+                        <h2>What did I do?</h2>
+                        <ul style="list-style: inside square;">
+                          <li>Led a Java project to automate the complex comparison of over <strong>50 HTTP API</strong> responses between the public and beta versions of Incognito Central Lease Service, ensuring consistency and reliability across versions.</li>
+                          <li>Developed a suite of <strong>200+ API and UI automated tests</strong> in Java and TypeScript for various Incognito products, utilizing JUnit, Selenium, and Playwright, maintaining software quality standards.</li>
+                          <li>Transformed the Jenkins testing pipeline, leveraging <strong>Docker</strong> to implement a <strong>scalable, containerized architecture</strong>, increasing uptime by <strong>400%</strong>, and cutting build and test execution times by <strong>30%.</strong></li>
                         </ul>
                       </div>
                     </div>
@@ -147,61 +135,24 @@
                     <h3 class="jobLocation">Vancouver, BC</h3>
                     <h3 class="jobDate">January 2023 - April 2023</h3>
                 </div>
-                <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(2)">
+                <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(3)">
                     <div class="quote">
-                        I let users create their own worlds.
-                        <div class="clickMe">Click to learn more...</div>
-                      </div>
+                      I let users create their own worlds.
+                      <div class="clickMe">Click to learn more...</div>
+                    </div>
                     <div class="skills-grid hidden skillsContent">
-                      <h2>Skills</h2>
                       <div class="skills-container">
                         <div class="skills-group">
-                          <h3>Languages</h3>
-                          <ul>
-                            <li>
-                              <strong>C++</strong>
-                              <span>- <em>for frontend game features</em></span>
-                            </li>
-                            <li>
-                              <strong>C#</strong>
-                              <span>- <em>for backend game and server features</em></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="skills-group">
-                          <h3>Technologies</h3>
-                          <ul>
-                            <li>
-                              <strong>Unreal Engine</strong>
-                              <span>- <em>for creating 3D modular UI components</em></span>
-                            </li>
-                            <li>
-                              <strong>GDB, Valgrind</strong>
-                              <span>- <em>for debugging and memory management</em></span>
-                            </li>
-                            <li>
-                              <strong>Perforce</strong>
-                              <span>- <em>for version control</em></span>
-                            </li>
+                          <h2>What did I do?</h2>
+                          <ul style="list-style: inside square;">
+                            <li>Led the full-stack development of the game-wide ad platform, utilizing <strong>C++ and C#</strong>, which directly contributed to a <strong>300%</strong> increase in revenue generation opportunities.</li>
+                            <li>Worked closely with designers to convert their designs into intuitive and reusable UI components in <strong>Unreal Engine.</strong></li>
+                            <li>Debugged code using <strong>GDB</strong> and ensured proper memory management using <strong>Valgrind.</strong></li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
-        </div>
-
-        <h1 id="education">Education</h1>
-        <div id="educationList">
-            <div class="education">
-                <div class="eduBox">
-                    <img src="/images/ubc.png" alt="UBC Logo" class="companyLogo">
-                    <h1 class="schoolName">University of British Columbia</h1>
-                    <h2 class="degreeTitle">Bachelor of Science in Computer Science</h2>
-                    <h3 class="jobLocation">Vancouver, BC</h3>
-                    <h3 class="jobDate">September 2021 - May 2026</h3>
-                </div>
-            </div>
         </div>
     </main>
 </body>
