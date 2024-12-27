@@ -33,7 +33,7 @@ ul {
 }
 
 #workExperience {
-    margin: 0px 0px 25px 0px
+    margin: 20px 0px 0px 0px
 }
 
 .job {
@@ -66,6 +66,10 @@ ul {
     flex: 1;
 }
 
+#education {
+    margin:0;
+}
+
 
 .companyLogo {
     border-radius: 10px;
@@ -77,7 +81,7 @@ h2 {
 }
 
 .jobBox:first-child {
-    flex: 0 0 30%;
+    flex: 0 0 37%;
 }
 
 
@@ -137,7 +141,6 @@ h2 {
   .skills-group li span em {
     font-size: 0.9em;
     font-weight: 300;
-    color: #555;
   }
   
   
@@ -248,33 +251,6 @@ h2 {
         color: black;
     }
 
-    .course {
-        border-top: 1px solid #ccc;
-    }
-
-    .course:hover {
-        background-color: #f2f2f2;
-        cursor:default;
-    }
-
-    .todo {
-        background-color: #f2f2f2;
-        color: #7f7f7f;
-    }
-    
-    .todo:hover {
-        background-color: #f2f2f2;
-        color: black;
-    }
-
-    .course {
-        border-top: 1px solid #ccc;
-    }
-
-    .course:last-child {
-        border-bottom: 1px solid #ccc;
-    }
-
     .nav {
         background-color: #f5f5f5
     }
@@ -305,7 +281,7 @@ h2 {
         background-color: #f8f8f8;
     }
     .jobDetails {
-        border-right: 2px solid #dcdcdc;
+        border-right: 2px solid #e6e6e6;
     }
 
     @media (max-width: 768px) {
