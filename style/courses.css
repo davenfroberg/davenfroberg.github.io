@@ -46,13 +46,16 @@ section {
     top: 5px;
 }
 
+.in-text {
+    padding-left:0px
+}
+
 .bottom {
     padding-top: 35px;
 }
 
 #title {
     padding:0px;
-    padding-bottom:20px;
     margin:0px;
     display:block;
 }
@@ -236,6 +239,10 @@ h2 {
     li {
         margin: 5px 0;
         padding: 10px;
+    }
+
+    #subheading {
+        color: #aeaeae
     }
 }
 
