@@ -84,7 +84,6 @@ h2 {
     flex: 0 0 37%;
 }
 
-
 .quote {
     font-size: 1.2em;
     font-style: italic;
@@ -98,6 +97,15 @@ h2 {
   
   .hidden {
     display: none;
+  }
+
+ 
+
+  .dontClick {
+    cursor:default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .skills {
