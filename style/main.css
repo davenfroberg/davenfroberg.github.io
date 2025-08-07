@@ -4,6 +4,15 @@ body {
     font-size: 120%;
 }
 
+/* Main content container */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:15vh;
+}
+
 #project-links {
     display: flex;
     flex-direction: column;
