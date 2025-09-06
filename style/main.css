@@ -4,6 +4,12 @@ body {
     font-size: 120%;
 }
 
+.inline-logo {
+    height: 1.5em;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+
 /* Main content container */
 .main-content {
     display: flex;
