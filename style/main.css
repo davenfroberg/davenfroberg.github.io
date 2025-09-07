@@ -178,6 +178,10 @@ a {
         content: url("../images/instagram_light.png");
     }
 
+        #amazon {
+            content: url("../images/amazon-word.png");
+        }
+
     a {
         color: black;
     }
@@ -233,6 +237,10 @@ a {
     #instagram {
         content: url("../images/instagram_dark.png");
     }
+
+        #amazon {
+            content: url("../images/amazon-white-text.png");
+        }
 
     a {
         color: rgb(255, 255, 255);
