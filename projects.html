@@ -10,22 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="./scripts/projects.js"></script>
+    <meta name="description" content="GitHub projects and repositories by Daven Froberg, showcasing software development work and contributions.">
+    <meta property="og:title" content="My Projects - Daven Froberg">
+    <meta property="og:description" content="GitHub projects and repositories showcasing software development work.">
+    <meta property="og:type" content="website">
     <script>
         /*to prevent Firefox FOUC, this must be here*/
         let FF_FOUC_FIX;
     </script>
-    <title>Daven Froberg</title>
+    <title>My Projects - Daven Froberg</title>
 </head>
 
 <body>
 
     <header>
-        <button class="hamburger">
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">
             <div class="bar"></div>
         </button>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="navigation">
         <a href="/">Home</a>
         <a href="./about.html">About Me!</a>
         <a href="./experience.html">My Experience</a>
@@ -37,7 +40,8 @@
     <h1 id="title">My GitHub Projects</h1>
     <ul id="project-list">
     </ul>
-
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/projects.js"></script>
 </body>
 
 </html>

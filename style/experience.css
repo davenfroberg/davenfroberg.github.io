@@ -1,16 +1,4 @@
-body {
-    font-family: "IBM Plex Mono", monospace;
-    text-align: center;
-    font-size: 120%;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-}
+@import url('./base.css');
 
 .quote {
     padding: 20px;
@@ -38,9 +26,8 @@ ul {
 
 .job {
     display: flex;
-    margin: 0px 100px;
+    margin: 30px 100px;
     border-radius: 20px;
-    transform: scale(0.9);
     flex-wrap: wrap;
 }
 
@@ -89,7 +76,13 @@ h2 {
     font-style: italic;
     text-align: center;
     margin: 20px 0;
-  }
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.quote:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
 
   .clickMe{
     padding-top:30px;
@@ -99,8 +92,6 @@ h2 {
     display: none;
   }
 
- 
-
   .dontClick {
     cursor:default;
     display: flex;
@@ -108,11 +99,13 @@ h2 {
     align-items: center;
   }
 
+
   .skills {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
   }
 
   .skills-container {
@@ -150,93 +143,39 @@ h2 {
     font-size: 0.9em;
     font-weight: 300;
   }
-  
-  
 
+/* Classes to replace inline styles */
+.quote-left {
+    text-align: left;
+}
 
-/* Start of nav menu */
-.nav a {
-    display: block;
-    margin: 0 auto 16px;
+.author-style {
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 100;
+    font-size: smaller;
+}
+
+.click-me-center {
     text-align: center;
-    margin-bottom: 16px;
-    padding: 12px 10px;
-    width: 100%;
-    max-width: 70%
 }
 
-.nav {
-    position: fixed;
-    top: 0;
-    width: 25%;
-    min-height: 100vh;
-    display: block;
-    z-index: 98;
-    padding-top: 120px;
-    right: 100%;
-    transition: 0.4s;
+.skills-group .skills-list-square {
+    list-style: inside square !important;
 }
 
-.nav.is-active {
-    right: 75%;
+.skills-group .gpa-bold {
+    font-weight: bold !important;
 }
 
-@media (max-width: 700px) {
-    .nav {
-        width: 50%;
-    }
-    .nav.is-active {
-        right: 50%;
-    }
+.skills-group .gpa-separator {
+    font-weight: 100 !important;
 }
+  
+  
 
-.hamburger {
-    position: relative;
-    display: block;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    z-index: 99;
 
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.hamburger .bar,
-.hamburger:after,
-.hamburger:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 5px;
-    margin: 6px 0px;
-    transition: 0.4s;
-}
-
-.hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-8px, 6px);
-}
-
-.hamburger.is-active:after {
-    transform: rotate(45deg) translate(-8px, -9px);
-}
-
-.hamburger.is-active .bar {
-    opacity: 0;
-}
-
-#projects_image {
-    height: 20px;
-    width: 20px;
-    padding-left: 5px;
-    padding-top: 2px;
-}
-
-/* End of nav menu */
-
-/* Start of dark/light-mode preferences */
+/* Dark/light mode preferences - base styles imported from base.css */
 
 @media (prefers-color-scheme: light) {
     body {
@@ -350,18 +289,6 @@ h2 {
 
     #projects_image {
         content: url("/images/github_dark.png");
-    }
-
-    .course {
-        border-top: 1px solid #ccc;
-    }
-    .course:last-child {
-        border-bottom: 1px solid #ccc;
-    }
-
-    .course:hover {
-        background-color: #444444;
-        cursor:default;
     }
 
     .todo {

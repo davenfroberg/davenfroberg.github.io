@@ -10,7 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="./scripts/main.js"></script>
+    <meta name="description" content="Daven Froberg - Fifth-year Computer Science student at UBC, Software Development Engineer Intern at Amazon. Passionate about infrastructure, distributed systems, and backend engineering.">
+    <meta property="og:title" content="Daven Froberg - Computer Science Student">
+    <meta property="og:description" content="Fifth-year Computer Science student at UBC, Software Development Engineer Intern at Amazon.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://davenfroberg.github.io">
     <script>
         /*to prevent Firefox FOUC, this must be here*/
         let FF_FOUC_FIX;
@@ -20,11 +24,11 @@
 
 <body>
     <header>
-        <button class="hamburger">
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">
             <div class="bar"></div>
         </button>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="navigation">
         <a href="/">Home</a>
         <a href="./about.html">About Me!</a>
         <a href="./experience.html">My Experience</a>
@@ -33,7 +37,7 @@
         <!-- <a href="./projects.html">All Projects <img src="/images/github_light.png" id="projects_image"></a> -->
   </nav>
     <div class="main-content">
-        <div id=" title">
+        <div id="title">
             <h1 id="intro" class="heading">Hi! My name is Daven Froberg</h1>
         </div>
         <div id="description">
@@ -42,14 +46,16 @@
         </div>
 
         <div id='socials'>
-            <a href="https://www.linkedin.com/in/davenfroberg/" target="_blank"><img class='social' id='linkedin'
+            <a href="https://www.linkedin.com/in/davenfroberg/" target="_blank" rel="noopener noreferrer"><img class='social' id='linkedin'
                     src="./images/linkedin_dark.png" alt="LinkedIn Link"></a>
-            <a href="https://github.com/davenfroberg" target="_blank"><img class='social' id='github'
+            <a href="https://github.com/davenfroberg" target="_blank" rel="noopener noreferrer"><img class='social' id='github'
                     src="./images/github_dark.png" alt="GitHub Link"></a>
-            <a href="https://www.instagram.com/davenfroberg.photos/" target="_blank"><img class='social' id='instagram'
+            <a href="https://www.instagram.com/davenfroberg.photos/" target="_blank" rel="noopener noreferrer"><img class='social' id='instagram'
                     src="./images/instagram_dark.png" alt="Instagram Link"></a>
         </div>
     </div>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

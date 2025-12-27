@@ -1,17 +1,4 @@
-body {
-    font-family: "IBM Plex Mono", monospace;
-    text-align: center;
-    font-size: 120%;
-}
-
-
-a:visited {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-}
+@import url('./base.css');
 
 .testimonials-section {
     padding: 4rem;

@@ -10,20 +10,23 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
             
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <script src="./scripts/about.js"></script>
+        <meta name="description" content="Learn more about Daven Froberg - a fifth-year Computer Science student at UBC, passionate about infrastructure, distributed systems, and backend engineering.">
+        <meta property="og:title" content="About Me - Daven Froberg">
+        <meta property="og:description" content="Fifth-year Computer Science student at UBC, passionate about infrastructure, distributed systems, and backend engineering.">
+        <meta property="og:type" content="website">
         <script>
             /*to prevent Firefox FOUC, this must be here*/
             let FF_FOUC_FIX;
         </script>
-        <title>Daven Froberg</title>
+        <title>About Me - Daven Froberg</title>
     </head>
 <body>
     <header>
-        <button class="hamburger">
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">
             <div class="bar"></div>
         </button>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="navigation">
         <a href="/">Home</a>
         <a href="./about.html">About Me!</a>
         <a href="./experience.html">My Experience</a>
@@ -34,22 +37,22 @@
 
     
     <div id="description">
-        <img src="images/Quarter Zip.jpeg" id="description-image" alt="Image of Daven Froberg">
+        <img src="images/Quarter Zip.jpeg" id="description-image" alt="Image of Daven Froberg" loading="lazy">
         <div id="description-text">
-            <div id=" title">
+            <div id="title">
                 <h1 id="intro" class="heading">A Little Bit About Me...</h1>
             </div>
-            <p id="description-p">I am a fifth-year BSc. Computer Science student at the University of British Columbia. I just finished my internship as a Software Development Engineer Intern at Amazon.<br> <br>
+            <p id="description-p">I'm a fifth-year Computer Science student at the University of British Columbia, and I just finished my internship as a Software Development Engineer Intern at Amazon.<br><br>
 
-                I'm driven by challenge and thrive in ambiguity. I take great pride in my work and I put max effort into everything I do, both inside and outside of the workplace.  <br><br>
+                I'm driven by challenge and thrive in ambiguity. I take great pride in my work and put maximum effort into everything I do, both inside and outside of the workplace.<br><br>
                 
-                I'm interested in the fields of infrastructure, distributed systems, backend engineering, and networking, focusing on how computer systems work together to solve complex problems. <br><br>
-
-                Beyond the tech world, I'm a natural leader and have led countless teams to success. Learning is a deep-seated passion of mine and I'm a firm believer in continuous education. I'm excited to see where my post-secondary studies lead me in my career. <br><br>
+                I'm passionate about infrastructure, distributed systems, databases, and backend engineering, focusing on how computer systems work together to solve complex problems. Beyond the tech world, I'm a natural leader and a firm believer in continuous learning.<br><br>
                 
                 When I'm not busy with work or school, you'll find me playing hockey, capturing moments through photography, watching sports, or lifting at the gym.
             </p>
         </div>
     </div>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/about.js"></script>
 </body>
 </html>

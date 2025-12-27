@@ -9,21 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="./scripts/courses.js"></script>
+    <meta name="description" content="Relevant coursework completed by Daven Froberg, including Computer Science courses in algorithms, databases, machine learning, distributed systems, and more.">
+    <meta property="og:title" content="Relevant Courses - Daven Froberg">
+    <meta property="og:description" content="Relevant coursework in Computer Science, Mathematics, and Statistics.">
+    <meta property="og:type" content="website">
     <script>
         /*to prevent Firefox FOUC, this must be here*/
         let FF_FOUC_FIX;
     </script>
-    <title>Daven Froberg</title>
+    <title>Relevant Courses - Daven Froberg</title>
 </head>
 
 <body>
     <header>
-        <button class="hamburger">
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">
             <div class="bar"></div>
         </button>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="navigation">
         <a href="/">Home</a>
         <a href="./about.html">About Me!</a>
         <a href="./experience.html">My Experience</a>
@@ -38,6 +41,27 @@
         <section class="top">
             <h2>Computer Science</h2>
             <ul class="courses-list">
+                <li class="course"><span class="title">CPSC 436S - Computer Security<div class="grade"> - in progress</div></span>
+                    <ul class="skills-list">
+                        <li>Cryptography and Encryption</li>
+                        <li>Network Security</li>
+                        <li>Authentication and Access Control</li>
+                    </ul>
+                </li>
+                <li class="course"><span class="title">CPSC 416 - Distributed Systems<div class="grade"> - in progress</div></span>
+                    <ul class="skills-list">
+                        <li>Consensus Algorithms</li>
+                        <li>Fault Tolerance</li>
+                        <li>System Design and Scalability</li>
+                    </ul>
+                </li>
+                <li class="course"><span class="title">CPSC 410 - Advanced Software Engineering<div class="grade"> - in progress</div></span>
+                    <ul class="skills-list">
+                        <li>Domain Specific Languages</li>
+                        <li>Program Analysis</li>
+                        <li>Large-Scale Software Design</li>
+                    </ul>
+                </li>
                 <li class="course"><span class="title">CPSC 418 - Parallel Computation<div class="grade"> - A</div></span>
                     <ul class="skills-list">
                         <li>Parallel Algorithms</li>
@@ -52,18 +76,18 @@
                         <li>Storage Hierarchy & Disk Management</li>
                     </ul>
                 </li>
-                <li class="course"><span class="title">CPSC 330 - Applied Machine Learning<div class="grade"> - A+</div></span> <img class="star" src="images/star.png">
-                    <ul class="skills-list">
-                        <li>Modern ML Frameworks</li>
-                        <li>Applied ML Workflows</li>
-                        <li>Deployment & Reproducibility</li>
-                    </ul>
-                </li>
                 <li class="course"><span class="title">CPSC 340 - Machine Learning and Data Mining<div class="grade"> - A</div></span> <img class="star" src="images/star.png">
                     <ul class="skills-list">
                         <li>Neural Networks</li>
                         <li>Supervised and Unsupervised Learning</li>
                         <li>Deep Learning</li>
+                    </ul>
+                </li>
+                <li class="course"><span class="title">CPSC 330 - Applied Machine Learning<div class="grade"> - A+</div></span> <img class="star" src="images/star.png">
+                    <ul class="skills-list">
+                        <li>Modern ML Frameworks</li>
+                        <li>Applied ML Workflows</li>
+                        <li>Deployment & Reproducibility</li>
                     </ul>
                 </li>
                  <li class="course"><span class="title">CPSC 320 - Intermediate Algorithm Design and Analysis<div class="grade"> - A+</div></span> <img class="star" src="images/star.png">
@@ -83,7 +107,7 @@
                 </li>
                 <li class="course"><span class="title">CPSC 313 - Computer Hardware and Operating Systems<div class="grade"> - A+</div></span>
                     <ul class="skills-list">
-                        <li>Computer Architecutre</li>
+                        <li>Computer Architecture</li>
                         <li>Caching</li>
                         <li>File Systems</li>
                         <li>Parallelism</li>
@@ -197,5 +221,7 @@
             </ul>
         </section>
     </main>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/courses.js"></script>
 </body>
 </html>

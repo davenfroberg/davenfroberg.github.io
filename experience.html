@@ -12,21 +12,24 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <script src="./scripts/experience.js"></script>
+  <meta name="description" content="Work experience and education of Daven Froberg - Software Development Engineer at Amazon, Teaching Assistant at UBC, and previous internships at Incognito Software and Sun Machine Games.">
+  <meta property="og:title" content="My Experience - Daven Froberg">
+  <meta property="og:description" content="Work experience including Software Development Engineer at Amazon, Teaching Assistant at UBC, and previous internships.">
+  <meta property="og:type" content="website">
   <script>
     /*to prevent Firefox FOUC, this must be here*/
     let FF_FOUC_FIX;
   </script>
-  <title>Daven Froberg</title>
+  <title>My Experience - Daven Froberg</title>
 </head>
 
 <body>
   <header>
-    <button class="hamburger">
+    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">
       <div class="bar"></div>
     </button>
   </header>
-  <nav class="nav">
+  <nav class="nav" id="navigation">
         <a href="/">Home</a>
         <a href="./about.html">About Me!</a>
         <a href="./experience.html">My Experience</a>
@@ -40,26 +43,26 @@
     <div id="educationList">
       <div class="job">
         <div class="jobDetails jobBox">
-          <img src="/images/ubc.png" alt="UBC Logo" class="companyLogo">
+          <img src="/images/ubc.png" alt="UBC Logo" class="companyLogo" loading="lazy">
           <h1 class="companyName">University of British Columbia</h1>
           <h2 class="jobTitle">Bachelor of Science in Computer Science</h2>
           <h3 class="jobLocation">Vancouver, BC</h3>
           <h3 class="jobDate">September 2021 - May 2026</h3>
         </div>
-        <div class="skills jobBox" class="skillsSection" style="cursor: default;">
-          <div class="quote hidden" style="text-align: left;">
-            “The brick walls are there to stop the people who don’t want it badly enough. They’re there to stop the
-            other people.”
-            <div class="author" style="text-align: left; padding-top:20px; font-weight:100; font-size:smaller;"> - Randy
+        <div class="dontClick jobBox skillsSection cursor-default">
+          <div class="quote hidden quote-left">
+            "The brick walls are there to stop the people who don't want it badly enough. They're there to stop the
+            other people."
+            <div class="author author-style"> - Randy
               Pausch; The Last Lecture</div>
-            <div class="clickMe" style="text-align: center;">Click to learn more...</div>
+            <div class="clickMe click-me-center">Click to learn more...</div>
           </div>
           <div class="skills-grid skillsContent">
             <div class="skills-container">
               <div class="skills-group">
                 <h2>How's my degree going?</h2>
-                <ul style="list-style: inside square;">
-                  <li style="font-weight:bold;">90% cumulative GPA <span style="font-weight:100;">|</span> 92.9%
+                <ul class="skills-list-square">
+                  <li class="gpa-bold">90.3% cumulative GPA <span class="gpa-separator">|</span> 92.9%
                     computer science GPA</li>
                   <li>Dean's List; 2021, 2022, 2023, 2024</li>
                   <li>A part of the UBC Science Co-op program.</li>
@@ -77,22 +80,22 @@
 
       <div class="job">
         <div class="jobDetails jobBox">
-          <img src="/images/amazon.jpg" alt="Amazon Logo" class="companyLogo">
+          <img src="/images/amazon.jpg" alt="Amazon Logo" class="companyLogo" loading="lazy">
           <h1 class="companyName">Amazon</h1>
-          <h2 class="jobTitle">Software Development Engineer Intern</h2>
+          <h2 class="jobTitle">Software Development Engineer I</h2>
           <h3 class="jobLocation">Vancouver, BC</h3>
-          <h3 class="jobDate">May 2025 - August 2025</h3>
+          <h3 class="jobDate"> Starting 2026</h3>
         </div>
-        <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(1)">
+        <div class="dontClick jobBox skillsSection" onclick="void(1)">
           <div class="quote">
-            I helped turn millions of applications into one perfect hire.
-            <div class="clickMe">Click to learn more...</div>
+            Returning to Amazon in 2026
+            <!-- <div class="clickMe">Click to learn more...</div> -->
           </div>
           <div class="skills-grid hidden skillsContent">
             <div class="skills-container">
               <div class="skills-group">
                 <h2>What do I do?</h2>
-                <ul style="list-style: inside square;">
+                <ul class="skills-list-square">
                   <li>
                     A part of the Amazon hiring technologies team, creating solutions to manage applicant data efficently, securely, and effectively.
                   </li>
@@ -108,13 +111,44 @@
 
       <div class="job">
         <div class="jobDetails jobBox">
-          <img src="/images/ubc.png" alt="UBC Logo" class="companyLogo">
+          <img src="/images/amazon.jpg" alt="Amazon Logo" class="companyLogo" loading="lazy">
+          <h1 class="companyName">Amazon</h1>
+          <h2 class="jobTitle">Software Development Engineer Intern</h2>
+          <h3 class="jobLocation">Vancouver, BC</h3>
+          <h3 class="jobDate">May 2025 - August 2025</h3>
+        </div>
+        <div class="skills jobBox skillsSection" onclick="toggleSkills(2)">
+          <div class="quote">
+            I helped turn millions of applications into one perfect hire.
+            <div class="clickMe">Click to learn more...</div>
+          </div>
+          <div class="skills-grid hidden skillsContent">
+            <div class="skills-container">
+              <div class="skills-group">
+                <h2>What did I do?</h2>
+                <ul class="skills-list-square">
+                  <li>
+                    A part of the Amazon recruiting infrastructure team, creating solutions to manage applicant data efficently, securely, and effectively.
+                  </li>
+                  <li>
+                    Designed and implemented scalable infrastructure using AWS CDK, capable of handling tens of millions of Amazon job applications annually.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="jobDetails jobBox">
+          <img src="/images/ubc.png" alt="UBC Logo" class="companyLogo" loading="lazy">
           <h1 class="companyName">University of British Columbia</h1>
           <h2 class="jobTitle">Undergraduate Teaching Assistant - CPSC 110</h2>
           <h3 class="jobLocation">Vancouver, BC</h3>
           <h3 class="jobDate">September 2024 - April 2025</h3>
         </div>
-        <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(2)">
+        <div class="skills jobBox skillsSection" onclick="toggleSkills(3)">
           <div class="quote">
             I transformed the complex into the simple.
             <div class="clickMe">Click to learn more...</div>
@@ -123,7 +157,7 @@
             <div class="skills-container">
               <div class="skills-group">
                 <h2>What did I do?</h2>
-                <ul style="list-style: inside square;">
+                <ul class="skills-list-square">
                   <li>
                     Led twice-weekly labs of <strong>30 students each</strong>, teaching core programming concepts
                     such as recursion, graph and tree traversal, testing principles, and problem-solving skills.
@@ -144,14 +178,14 @@
 
       <div class="job">
         <div class="jobDetails jobBox">
-          <img src="/images/incognito.jpg" alt="Incognito Logo" class="companyLogo">
+          <img src="/images/incognito.jpg" alt="Incognito Logo" class="companyLogo" loading="lazy">
           <h1 class="companyName">Incognito Software Systems</h1>
           <h2 class="jobTitle">Software QA Engineer Intern</h2>
           <h3 class="jobLocation">Vancouver, BC</h3>
           <h3 class="jobDate">January 2024 - August 2024</h3>
         </div>
 
-        <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(3)">
+        <div class="skills jobBox skillsSection" onclick="toggleSkills(4)">
           <div class="quote">
             I broke things so the important people wouldn't.
             <div class="clickMe">Click to learn more...</div>
@@ -160,7 +194,7 @@
             <div class="skills-container">
               <div class="skills-group">
                 <h2>What did I do?</h2>
-                <ul style="list-style: inside square;">
+                <ul class="skills-list-square">
                   <li>Led a Java project to automate the complex comparison of over <strong>50 HTTP API</strong>
                     responses between the public and beta versions of Incognito Central Lease Service, ensuring
                     consistency and reliability across versions.</li>
@@ -180,13 +214,13 @@
 
       <div class="job">
         <div class="jobDetails jobBox">
-          <img src="/images/smg.jpg" alt="SMG Logo" class="companyLogo">
+          <img src="/images/smg.jpg" alt="SMG Logo" class="companyLogo" loading="lazy">
           <h1 class="companyName">Sun Machine Games</h1>
           <h2 class="jobTitle">Software Engineer Intern</h2>
           <h3 class="jobLocation">Vancouver, BC</h3>
           <h3 class="jobDate">January 2023 - April 2023</h3>
         </div>
-        <div class="skills jobBox" class="skillsSection" onclick="toggleSkills(4)">
+        <div class="skills jobBox skillsSection" onclick="toggleSkills(5)">
           <div class="quote">
             I let users create their own worlds.
             <div class="clickMe">Click to learn more...</div>
@@ -195,7 +229,7 @@
             <div class="skills-container">
               <div class="skills-group">
                 <h2>What did I do?</h2>
-                <ul style="list-style: inside square;">
+                <ul class="skills-list-square">
                   <li>Led the full-stack development of the game-wide ad platform, utilizing <strong>C++ and
                       C#</strong>, which directly contributed to a <strong>300%</strong> increase in revenue generation
                     opportunities.</li>
@@ -212,6 +246,8 @@
       </div>
     </div>
   </main>
+  <script src="./scripts/nav.js"></script>
+  <script src="./scripts/experience.js"></script>
 </body>
 
 </html>
