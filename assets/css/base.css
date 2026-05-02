@@ -1,3 +1,7 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 :root {
     --bg-color-light: #ffffff;
     --text-color-light: #555555;
