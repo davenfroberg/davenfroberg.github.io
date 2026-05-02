@@ -1,0 +1,165 @@
+@import url('./base.css');
+
+.subject-section {
+    margin-bottom: 1.75rem;
+    text-align: left;
+}
+
+.subject-section + .subject-section {
+    margin-top: 0.5rem;
+}
+
+.subject-section:last-of-type {
+    margin-bottom: 0;
+}
+
+.courses-grid {
+    display: grid;
+    gap: 0.85rem;
+    text-align: left;
+}
+
+@media (min-width: 52rem) {
+    .courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+.course {
+    margin: 0;
+    padding: 0.85rem 1rem 0.9rem 1.05rem;
+    border-radius: 6px;
+    border: 1px solid;
+    border-left-width: 3px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.course-heading {
+    margin: 0 0 0.5rem;
+    padding: 0;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.28;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 0.65rem;
+    row-gap: 0.12rem;
+    align-items: start;
+}
+
+.course-id {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    font-weight: 700;
+    font-size: 0.82em;
+    letter-spacing: 0.02em;
+    opacity: 0.92;
+}
+
+.course-name {
+    grid-column: 1;
+    grid-row: 2;
+    display: block;
+    min-width: 0;
+    font-weight: 600;
+}
+
+.grade {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    justify-self: end;
+    align-self: start;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.88em;
+    white-space: nowrap;
+    line-height: 1.2;
+    padding-top: 0.05rem;
+}
+
+.skills-list {
+    margin: 0.35rem 0 0;
+    padding: 0.45rem 0 0 1.15rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.22);
+    list-style: disc;
+    list-style-position: outside;
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.42;
+}
+
+.skills-list li {
+    font-weight: 400;
+    display: list-item;
+    padding: 0.12rem 0;
+    margin: 0;
+    text-align: left;
+}
+
+.star {
+    display: inline-block;
+    width: 30px;
+    padding: 0;
+    padding-left: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.in-text {
+    padding-left: 0px;
+}
+
+@media (prefers-color-scheme: light) {
+    .course {
+        border-color: #d8d8d8;
+        border-left-color: #333;
+        background-color: #f7f7f7;
+    }
+
+    .todo {
+        background-color: #f2f2f2;
+        color: #7f7f7f;
+    }
+
+    .todo:hover {
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    #subheading {
+        color: #aeaeae;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--text-color-dark);
+    }
+
+    .course {
+        border-color: #3a3a3a;
+        border-left-color: #c4c4c4;
+        background-color: #222;
+    }
+
+    .skills-list {
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .todo {
+        background-color: #444444;
+        color: #7f7f7f;
+    }
+
+    .todo:hover {
+        background-color: #444444;
+        color: #e9e9e9;
+    }
+
+    #subheading {
+        color: #747474;
+    }
+}

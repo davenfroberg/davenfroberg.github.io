@@ -1,0 +1,75 @@
+@import url('./base.css');
+
+.inline-logo {
+    height: 1.5em;
+    vertical-align: -0.15em;
+    margin: 0 0.1em;
+}
+
+.home-intro {
+    margin: 0 0 1.5rem;
+    font-size: 0.98rem;
+    font-weight: 300;
+    line-height: 1.52;
+}
+
+.social-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+#socials a {
+    text-decoration: none;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+@media (prefers-color-scheme: light) {
+    .home-intro {
+        color: var(--text-color-light);
+    }
+
+    #linkedin {
+        content: url("/assets/images/linkedin_light.png");
+    }
+
+    #github {
+        content: url("/assets/images/github_light.png");
+    }
+
+    #instagram {
+        content: url("/assets/images/instagram_light.png");
+    }
+
+    #amazon {
+        content: url("/assets/images/amazon-word.png");
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .home-intro {
+        color: var(--text-color-dark);
+    }
+
+    #linkedin {
+        content: url("/assets/images/linkedin_dark.png");
+    }
+
+    #github {
+        content: url("/assets/images/github_dark.png");
+    }
+
+    #instagram {
+        content: url("/assets/images/instagram_dark.png");
+    }
+
+    #amazon {
+        content: url("/assets/images/amazon-white-text.png");
+    }
+}

@@ -1,0 +1,174 @@
+@import url('./base.css');
+
+.exp-section + .exp-section {
+    margin-top: 1.75rem;
+}
+
+.exp-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.exp-section > .section-heading {
+    margin-bottom: 0;
+}
+
+.exp-item {
+    margin: 0;
+    padding: 1rem 1.1rem 1rem 1.15rem;
+    border-radius: 6px;
+    border: 1px solid;
+    border-left-width: 3px;
+}
+
+.exp-item .exp-bullets {
+    margin-top: 0.75rem;
+    padding-top: 0.65rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.exp-row {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+}
+
+.exp-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.exp-meta {
+    min-width: 0;
+}
+
+.exp-org {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.25;
+}
+
+.exp-role {
+    margin: 0.2rem 0 0;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.35;
+}
+
+.exp-when {
+    margin: 0.35rem 0 0;
+    font-size: 0.85rem;
+    font-weight: 300;
+    opacity: 0.9;
+    line-height: 1.35;
+}
+
+.exp-subheading {
+    margin: 0.65rem 0 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.exp-bullets {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style: disc;
+    font-weight: 300;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.exp-bullets li {
+    margin: 0.25rem 0;
+}
+
+.exp-bullets li strong {
+    font-weight: 600;
+}
+
+.gpa-bold {
+    font-weight: 700;
+}
+
+.gpa-separator {
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+    }
+
+    a {
+        color: black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: #666666;
+    }
+
+    .heading {
+        color: black;
+    }
+
+    .exp-item {
+        border-color: #d8d8d8;
+        border-left-color: #333;
+        background-color: #f7f7f7;
+    }
+
+    .exp-item .exp-bullets {
+        border-top-color: rgba(0, 0, 0, 0.12);
+    }
+
+    #projects_image {
+        content: url("/assets/images/github_light.png");
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #191919;
+        color: #e9e9e9;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+    }
+
+    a:visited {
+        color: rgb(255, 255, 255);
+    }
+
+    a:hover {
+        color: #d0d0d0;
+    }
+
+    .heading {
+        color: #e5e5e5;
+    }
+
+    .exp-item {
+        border-color: #3a3a3a;
+        border-left-color: #c4c4c4;
+        background-color: #222;
+    }
+
+    .exp-item .exp-bullets {
+        border-top-color: rgba(255, 255, 255, 0.12);
+    }
+
+    #projects_image {
+        content: url("/assets/images/github_dark.png");
+    }
+}

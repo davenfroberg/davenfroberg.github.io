@@ -1,0 +1,11 @@
+@import url('./base.css');
+
+main {
+    max-width: 36rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#title {
+    margin: 0 0 1rem;
+}

@@ -5,57 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <meta name="description" content="Daven Froberg - Fifth-year Computer Science student at UBC, Software Development Engineer Intern at Amazon. Passionate about infrastructure, distributed systems, and backend engineering.">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <meta name="description" content="Daven Froberg — UBC Computer Science graduate, Software Development Engineer at Amazon. Interested in infrastructure, distributed systems, and backend engineering.">
     <meta property="og:title" content="Daven Froberg - Computer Science Student">
-    <meta property="og:description" content="Fifth-year Computer Science student at UBC, Software Development Engineer Intern at Amazon.">
+    <meta property="og:description" content="UBC Computer Science graduate; Software Development Engineer at Amazon.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://davenfroberg.github.io">
-    <script>
-        /*to prevent Firefox FOUC, this must be here*/
-        let FF_FOUC_FIX;
-    </script>
     <title>Daven Froberg</title>
 </head>
 
 <body>
-    <header>
-        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">
-            <div class="bar"></div>
-        </button>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Site">
+            <a href="/">Home</a><span class="nav-sep" aria-hidden="true">·</span>
+            <a href="/about.html">About</a><span class="nav-sep" aria-hidden="true">·</span>
+            <a href="/experience.html">Experience</a><span class="nav-sep" aria-hidden="true">·</span>
+            <a href="/testimonials.html">Testimonials</a><span class="nav-sep" aria-hidden="true">·</span>
+            <a href="/courses.html">Courses</a>
+        </nav>
     </header>
-    <nav class="nav" id="navigation">
-        <a href="/">Home</a>
-        <a href="/about/">About Me!</a>
-        <a href="/experience/">My Experience</a>
-        <a href="/testimonials/">Testimonials</a>
-        <a href="/courses/">Relevant Courses</a>
-        <!-- <a href="/projects/">All Projects <img src="/images/github_light.png" id="projects_image"></a> -->
-  </nav>
-    <div class="main-content">
-        <div id="title">
-            <h1 id="intro" class="heading">Hi! My name is Daven Froberg</h1>
-        </div>
-        <div id="description">
-            <p>I'm a fifth-year Computer Science co-op student at the University of British Columbia. I just finished my internship at <img src="images/amazon-word.png" alt="Amazon Logo" id="amazon" class="inline-logo"/> as a Software Development Engineer Intern.
-            </p>
-        </div>
 
-        <div id='socials'>
-            <a href="https://www.linkedin.com/in/davenfroberg/" target="_blank" rel="noopener noreferrer"><img class='social' id='linkedin'
-                    src="./images/linkedin_dark.png" alt="LinkedIn Link"></a>
-            <a href="https://github.com/davenfroberg" target="_blank" rel="noopener noreferrer"><img class='social' id='github'
-                    src="./images/github_dark.png" alt="GitHub Link"></a>
-            <a href="https://www.instagram.com/davenfroberg.photos/" target="_blank" rel="noopener noreferrer"><img class='social' id='instagram'
-                    src="./images/instagram_dark.png" alt="Instagram Link"></a>
+    <main class="doc-main">
+        <h1 class="page-title">Daven Froberg</h1>
+        <p class="page-lede">BSc. Computer Science · Vancouver, BC</p>
+        <p class="home-intro">Recent BSc. graduate from the University of British Columbia. Starting full-time at Amazon as a Software Development Engineer.</p>
+
+        <h2 class="section-heading">Find me elsewhere</h2>
+        <div id="socials" class="social-row">
+            <a href="https://www.linkedin.com/in/davenfroberg/" target="_blank" rel="noopener noreferrer"><img class="social" id="linkedin" src="/assets/images/linkedin_dark.png" alt="LinkedIn"></a>
+            <a href="https://github.com/davenfroberg" target="_blank" rel="noopener noreferrer"><img class="social" id="github" src="/assets/images/github_dark.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/davenfroberg.photos/" target="_blank" rel="noopener noreferrer"><img class="social" id="instagram" src="/assets/images/instagram_dark.png" alt="Instagram"></a>
         </div>
-    </div>
-    <script src="./scripts/nav.js"></script>
-    <script src="./scripts/main.js"></script>
+    </main>
 </body>
 
 </html>

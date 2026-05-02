@@ -1,0 +1,73 @@
+@import url('./base.css');
+
+body {
+    min-height: 100vh;
+}
+
+.about-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin: 0;
+    padding: 1rem 1.1rem 1rem 1.15rem;
+    border-radius: 6px;
+    border: 1px solid;
+    border-left-width: 3px;
+}
+
+.about-photo {
+    width: 160px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-body {
+    flex: 1;
+    min-width: min(100%, 16rem);
+}
+
+.about-body p {
+    margin: 0 0 0.85rem;
+    font-size: 0.98rem;
+    font-weight: 300;
+    line-height: 1.52;
+}
+
+.about-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media (prefers-color-scheme: light) {
+    .about-panel {
+        border-color: #d8d8d8;
+        border-left-color: #333;
+        background-color: #f7f7f7;
+    }
+
+    .about-body p {
+        color: var(--text-color-light);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .about-panel {
+        border-color: #3a3a3a;
+        border-left-color: #c4c4c4;
+        background-color: #222;
+    }
+
+    .about-body p {
+        color: var(--text-color-dark);
+    }
+}
+
+@media (max-width: 520px) {
+    .about-photo {
+        max-width: 100%;
+        width: 100%;
+    }
+}
