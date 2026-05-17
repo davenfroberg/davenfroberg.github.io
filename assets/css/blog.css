@@ -1,0 +1,144 @@
+@import url('./base.css');
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.blog-item {
+    margin: 0;
+    padding: 1rem 1.1rem 1rem 1.15rem;
+    border-radius: 6px;
+    border: 1px solid;
+    border-left-width: 3px;
+}
+
+.blog-link {
+    text-decoration: none;
+    display: block;
+}
+
+.blog-title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.blog-date {
+    margin: 0.35rem 0 0;
+    font-size: 0.82rem;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+.blog-excerpt {
+    margin: 0.7rem 0 0;
+    padding-top: 0.65rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.92rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.post-meta {
+    margin: 0 0 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.post-body {
+    font-size: 0.98rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.post-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1.75rem 0 0.6rem;
+}
+
+.post-body p {
+    margin: 0 0 0.95rem;
+}
+
+.post-body h2 .course-name {
+    font-weight: 400;
+}
+
+.post-body code {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.88rem;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+}
+
+.post-body ul {
+    margin: 0 0 0.95rem;
+    padding-left: 1.25rem;
+}
+
+.post-body li {
+    margin: 0.25rem 0;
+}
+
+.post-back {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+@media (prefers-color-scheme: light) {
+    .blog-item {
+        border-color: #d8d8d8;
+        border-left-color: #333;
+        background-color: #f7f7f7;
+    }
+
+    .blog-excerpt {
+        color: var(--text-color-light);
+        border-top-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .blog-date {
+        color: var(--text-color-light);
+    }
+
+    .post-body code {
+        background-color: #f0f0f0;
+        color: #222;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .blog-item {
+        border-color: #3a3a3a;
+        border-left-color: #c4c4c4;
+        background-color: #222;
+    }
+
+    .blog-excerpt {
+        color: var(--text-color-dark);
+        border-top-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .blog-date {
+        color: var(--text-color-dark);
+    }
+
+    .post-body code {
+        background-color: #2a2a2a;
+        color: #e9e9e9;
+    }
+}
