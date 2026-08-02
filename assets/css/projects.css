@@ -1,11 +1,7 @@
 @import url('./base.css');
 
-main {
-    max-width: 36rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-#title {
-    margin: 0 0 1rem;
+.doc-main p {
+    font-size: 0.98rem;
+    font-weight: var(--font-weight-body);
+    line-height: 1.52;
 }

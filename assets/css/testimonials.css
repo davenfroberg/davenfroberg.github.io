@@ -19,7 +19,7 @@
     padding: 0;
     border: none;
     font-size: 0.98rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-body);
     font-style: normal;
     line-height: 1.52;
 }
@@ -29,12 +29,12 @@
     padding-top: 0.65rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 0.82rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-body);
     line-height: 1.35;
 }
 
 .t-author {
-    font-weight: 600;
+    font-weight: var(--font-weight-heading);
 }
 
 @media (prefers-color-scheme: light) {

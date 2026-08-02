@@ -14,13 +14,31 @@ html {
     --heading-color-dark: #e5e5e5;
     --nav-link-hover-dark: #d0d0d0;
     --border-color-dark: #444;
+
+    --font-weight-body: 300;
+    --font-weight-heading: 600;
 }
 
 body {
     font-family: "IBM Plex Mono", monospace;
+    font-weight: var(--font-weight-body);
     text-align: center;
     font-size: 120%;
     margin: 0;
+}
+
+strong,
+b {
+    font-weight: var(--font-weight-heading);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-heading);
 }
 
 a {
@@ -67,7 +85,7 @@ a:hover {
 
 .page-title {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-heading);
     margin: 0 0 0.5rem;
     text-align: center;
 }
@@ -75,7 +93,7 @@ a:hover {
 .page-lede {
     margin: 0 0 1.25rem;
     font-size: 0.85rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-body);
     text-align: center;
     line-height: 1.4;
     opacity: 0.9;
@@ -83,18 +101,10 @@ a:hover {
 
 .section-heading {
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-heading);
     margin: 0 0 0.75rem;
     padding-bottom: 0.35rem;
     border-bottom: 1px solid var(--border-color-light);
-}
-
-#projects_image {
-    height: 20px;
-    width: 20px;
-    padding-left: 5px;
-    padding-top: 2px;
-    vertical-align: middle;
 }
 
 @media (prefers-color-scheme: light) {
@@ -115,16 +125,8 @@ a:hover {
         color: var(--nav-link-hover-light);
     }
 
-    .heading {
-        color: var(--heading-color-light);
-    }
-
     .site-header {
         border-bottom-color: var(--border-color-light);
-    }
-
-    #projects_image {
-        content: url("/assets/images/github_light.png");
     }
 }
 
@@ -146,20 +148,12 @@ a:hover {
         color: var(--nav-link-hover-dark);
     }
 
-    .heading {
-        color: var(--heading-color-dark);
-    }
-
     .site-header {
         border-bottom-color: var(--border-color-dark);
     }
 
     .section-heading {
         border-bottom-color: var(--border-color-dark);
-    }
-
-    #projects_image {
-        content: url("/assets/images/github_dark.png");
     }
 }
 
@@ -176,11 +170,11 @@ a:hover {
 }
 
 .font-bold {
-    font-weight: bold;
+    font-weight: var(--font-weight-heading);
 }
 
 .font-light {
-    font-weight: 100;
+    font-weight: var(--font-weight-body);
 }
 
 .font-smaller {

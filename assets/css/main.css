@@ -9,7 +9,7 @@
 .home-intro {
     margin: 0 0 1.5rem;
     font-size: 0.98rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-body);
     line-height: 1.52;
 }
 
@@ -46,10 +46,6 @@
     #instagram {
         content: url("/assets/images/instagram_light.png");
     }
-
-    #amazon {
-        content: url("/assets/images/amazon-word.png");
-    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,9 +63,5 @@
 
     #instagram {
         content: url("/assets/images/instagram_dark.png");
-    }
-
-    #amazon {
-        content: url("/assets/images/amazon-white-text.png");
     }
 }

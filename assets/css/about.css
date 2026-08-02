@@ -33,7 +33,7 @@ body {
 .about-body p {
     margin: 0 0 0.85rem;
     font-size: 0.98rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-body);
     line-height: 1.52;
 }
 
