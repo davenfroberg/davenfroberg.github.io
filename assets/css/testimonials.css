@@ -1,5 +1,62 @@
 @import url('./base.css');
 
+.t-stats {
+    margin: 0 0 1.75rem;
+}
+
+.t-stats-lede {
+    margin: 0 0 0.85rem;
+    font-size: 0.82rem;
+    font-weight: var(--font-weight-body);
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.t-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.1rem 0.8rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 34rem) {
+    .t-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+}
+
+.t-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.t-stat-value {
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-heading);
+    line-height: 1.05;
+    font-variant-numeric: tabular-nums;
+}
+
+.t-stat-label {
+    margin-top: 0.35rem;
+    font-size: 0.82rem;
+    font-weight: var(--font-weight-heading);
+    line-height: 1.25;
+}
+
+.t-stat-detail {
+    margin-top: 0.15rem;
+    font-size: 0.72rem;
+    font-weight: var(--font-weight-body);
+    line-height: 1.25;
+    opacity: 0.75;
+}
+
 .t-list {
     display: flex;
     flex-direction: column;
@@ -52,6 +109,10 @@
         color: #333;
         border-top-color: rgba(0, 0, 0, 0.12);
     }
+
+    .t-stat-value {
+        color: var(--heading-color-light);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,5 +129,9 @@
     .t-meta {
         color: #b8b8b8;
         border-top-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .t-stat-value {
+        color: var(--heading-color-dark);
     }
 }
