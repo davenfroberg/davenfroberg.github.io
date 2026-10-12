@@ -1,5 +1,6 @@
 html {
     scrollbar-gutter: stable;
+    font-size: 118.75%;
 }
 
 :root {
@@ -15,15 +16,17 @@ html {
     --nav-link-hover-dark: #d0d0d0;
     --border-color-dark: #444;
 
-    --font-weight-body: 300;
+    --font-weight-body: 400;
     --font-weight-heading: 600;
+    --font-sans: "Space Grotesk", system-ui, sans-serif;
 }
 
 body {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-body);
     text-align: center;
-    font-size: 120%;
+    font-size: 1rem;
+    line-height: 1.55;
     margin: 0;
 }
 
@@ -52,6 +55,13 @@ a:visited {
 
 a:hover {
     opacity: 0.85;
+}
+
+code,
+kbd,
+pre {
+    font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: 0.92em;
 }
 
 .site-header {

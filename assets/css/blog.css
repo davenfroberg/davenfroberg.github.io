@@ -11,7 +11,6 @@
     padding: 1rem 1.1rem 1rem 1.15rem;
     border-radius: 6px;
     border: 1px solid;
-    border-left-width: 3px;
 }
 
 .blog-link {
@@ -70,7 +69,6 @@
 }
 
 .post-body code {
-    font-family: "IBM Plex Mono", monospace;
     font-size: 0.88rem;
     padding: 0.1rem 0.35rem;
     border-radius: 4px;
@@ -98,7 +96,6 @@
 @media (prefers-color-scheme: light) {
     .blog-item {
         border-color: #d8d8d8;
-        border-left-color: #333;
         background-color: #f7f7f7;
     }
 
@@ -120,7 +117,6 @@
 @media (prefers-color-scheme: dark) {
     .blog-item {
         border-color: #3a3a3a;
-        border-left-color: #c4c4c4;
         background-color: #222;
     }
 
