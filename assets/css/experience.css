@@ -55,7 +55,7 @@
 .exp-section {
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 1.3rem;
 }
 
 .exp-section > .section-heading {
